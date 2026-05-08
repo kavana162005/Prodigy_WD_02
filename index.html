@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy Task 02 | Animated Stopwatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="glass-container">
+        <div class="brand">PRODIGY<span>INFOTECH</span></div>
+        <h1>Stopwatch Application</h1>
+        
+        <div class="stopwatch-box">
+            <div class="display" id="display">00:00:00</div>
+            
+            <div class="controls">
+                <button id="startBtn" class="btn start" onclick="start()">Start</button>
+                <button id="pauseBtn" class="btn pause" onclick="pause()" disabled>Pause</button>
+                <button id="lapBtn" class="btn lap" onclick="lap()" disabled>Lap</button>
+                <button id="resetBtn" class="btn reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="laps-container">
+            <h3>Lap Records</h3>
+            <ul id="lapsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
